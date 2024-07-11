@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+:root{
+  --header-height: 3rem;
+  --font-semi: 600;
+}
+
+/*===== Colores =====*/
+:root{
+  --first-color: #f57586;
+  --second-color: #660033;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+  font-family: 'Cookie', cursive;
+  --big-font-size: 4rem;
+  --h2-font-size: 3rem;
+  --normal-font-size: 2rem;
+}
+@media screen and (min-width: 768px){
+  :root{
+    --big-font-size: 4rem;
+    --h2-font-size: 3rem;
+    --normal-font-size: 2rem;
+  }
+}
+
+/*===== Margenes =====*/
+:root{
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+}
+
+/*===== z index =====*/
+:root{
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+
+}
+.loader
+{
+  position: relative;
+}
+
+.loader span{
+
+  position: relative;
+  font-size: 4em;
+  color: #660033; ;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+  0%,40%,100%{
+    transform: translateY(0) ;
+  }
+  20%{
+    transform: translateY(-50px) ;
+  }
+}
+}
+
+.video2 {
+ height: 100vh;
+}
+
+.video1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+  .vid-back{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio:16/9){
+  .vid-back{
+    width: auto;
+    height: 100%;
+  }
+}
+.home__social{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.home__social-icon{
+  width: max-content;
+  margin-bottom: var(--mb-2);
+  font-size: 1.5rem;
+  color: var(--second-color);
+}
+.home__social-icon:hover{
+  color: var(--second-color);
+}

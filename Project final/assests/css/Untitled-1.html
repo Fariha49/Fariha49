@@ -1,0 +1,173 @@
+
+    <section class="work2">
+      
+        <div class="image-gallery">
+            <div class="image-box">
+                <img src="assests/img/rsz_2project_-_drawing_1.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+       
+       
+            <div class="image-box">
+                <img src="assests/img/rsz_project_-_drawing_1308952343.jpg" alt="img.jpg">
+
+           
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+    
+        
+            <div class="image-box">
+                <img src="assests/img/rsz_project_-_drawing_16650469874166912813.jpg" alt="img.jpg">
+           
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+       
+        
+            <div class="image-box">
+                <img src="assests/img/rsz_project_-_drawing_16835479979749212538.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+        
+         
+            <div class="image-box">
+                <img src="assests/img/rsz_project_-_drawing_1993329711.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+            <div class="image-box">
+                <img src="assests/img/rsz_project_-_drawing_22140782050.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+            <div class="image-box">
+                <img src="assests/img/rsz_screenshot_2021-07-05-02-27-21-11_1c337646f29875672b5a61192b9010f9.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+            <div class="image-box">
+                <img src="assests/img/rsz_screenshot_2021-07-05-02-27-32-99_1c337646f29875672b5a61192b9010f9.jpg" alt="img.jpg">
+            
+            <div class="overlay">
+                <div class="details">
+                    <h3 class="title">Your Title</h3>
+                    <span class="category">Category</span>
+                </div>
+            </div>
+        </div>
+            
+            </div>
+            
+            
+        
+        </section>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+    .image-gallery{
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: repeat( auto-fit , minmax(250px,1fr));
+        grid-auto-rows: 250px;
+        grid-auto-flow: dense;
+        grid-gap: 20px ;
+    }
+    .image-gallery .image-box{
+  
+      position: relative
+      overflow: hidden;
+  
+    }
+    .image-gallery .image-box:nth-child(7n+1){
+  
+      grid-column: span 2;
+      grid-row: span 2;
+  
+    }
+  
+    .image-gallery .image-box img{
+  
+      width: 50px;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease;
+  
+    }
+    .image-gallery .image-box:hover img{
+  
+      transform: scale(1.1);
+  
+    }
+    .image-gallery .image-box .overlay{
+     position: absolute;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: aliceblue;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     opacity: 1;
+     transition: all 0.5s ease;
+     z-index: 1;
+  
+  
+    }
+    .image-gallery .image-box:hover .overlay{
+  
+      top: 20px;
+      right: 20px;
+      bottom: 20px;
+      left: 20px;
+      opacity: 1;
+  
+    }
